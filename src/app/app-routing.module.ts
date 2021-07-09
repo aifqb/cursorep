@@ -9,14 +9,14 @@ import { NosotrosComponent } from "./pages/nosotros/nosotros.component";
 import { ProductosComponent } from "./pages/productos/productos.component";
 
 const app_routes: Router =[
-    { path: '', component: InicioComponent },
+    { path: 'inicio', component: InicioComponent },
     { path: 'nosotros', component: NosotrosComponent},
     { path: 'productos', component: ProductosComponent },
     { path: 'contacto', component: ContactoComponent },
     { path: 'encuentranos', component: EncuentranosComponent },
     { path: 'eventos', component: EventosComponent },
     { path: 'item', component: ItemComponent },
-    { path: '**', pathMatch: 'full', redirectTo: '' },
+    { path: '**', pathMatch: 'full', redirectTo: 'inicio' },
 ];
 
 
