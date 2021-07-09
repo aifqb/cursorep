@@ -8,6 +8,10 @@ import { ProductosComponent } from './pages/productos/productos.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ItemComponent } from './pages/item/item.component';
 import { AppRoutingModule } from './app-routing.module';
+import { InicioComponent } from './pages/inicio/inicio.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
+import { EncuentranosComponent } from './pages/encuentranos/encuentranos.component';
+import { EventosComponent } from './pages/eventos/eventos.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     ProductosComponent,
     NosotrosComponent,
-    ItemComponent
+    ItemComponent,
+    InicioComponent,
+    ContactoComponent,
+    EncuentranosComponent,
+    EventosComponent
   ],
   imports: [
     BrowserModule,
