@@ -1,5 +1,5 @@
 import { NgModule } from "@angular/core";
-import { Router, RouterModule } from "@angular/router";
+import { Router, RouterModule, Routes } from "@angular/router";
 import { ContactoComponent } from "./pages/contacto/contacto.component";
 import { EncuentranosComponent } from "./pages/encuentranos/encuentranos.component";
 import { EventosComponent } from "./pages/eventos/eventos.component";
@@ -8,7 +8,7 @@ import { ItemComponent } from "./pages/item/item.component";
 import { NosotrosComponent } from "./pages/nosotros/nosotros.component";
 import { ProductosComponent } from "./pages/productos/productos.component";
 
-const app_routes: Router =[
+const app_routes: Routes =[
     { path: 'inicio', component: InicioComponent },
     { path: 'nosotros', component: NosotrosComponent},
     { path: 'productos', component: ProductosComponent },
@@ -23,7 +23,7 @@ const app_routes: Router =[
 
 @NgModule({
     imports: [
-        RouterModule.forRoot(app_routes)
+        RouterModule.forRoot( app_routes, { useHash: true} )
     ],
     exports: [
         RouterModule
